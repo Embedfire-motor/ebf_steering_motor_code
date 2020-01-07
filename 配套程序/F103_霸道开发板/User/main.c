@@ -3,8 +3,8 @@
   * @file    main.c
   * @author  fire
   * @version V1.0
-  * @date    2013-xx-xx
-  * @brief   测试led
+  * @date    2020-xx-xx
+  * @brief   舵机驱动示例代码
   ******************************************************************************
   * @attention
   *
@@ -50,6 +50,7 @@ int main(void)
   
 	while(1)
 	{  
+    /* 按键控制 */
     /* 处理数据 */
     if (Key_Scan(KEY1_GPIO_PORT, KEY1_PIN) == KEY_ON)
     {
@@ -70,6 +71,7 @@ int main(void)
       set_steering_gear_dutyfactor(ChannelPulse);    // 设置占空比
     }
     
+    /* 串口控制 */
     /* 串口处理 */
     deal_serial_data();
 	}
