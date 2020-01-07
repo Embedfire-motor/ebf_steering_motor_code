@@ -21,7 +21,6 @@
 #include "./usart/bsp_debug_usart.h"
 #include <stdlib.h>
 #include "./key/bsp_key.h" 
-#include "./tim/bsp_advance_tim.h"
 #include "./tim/bsp_general_tim.h"
 
 __IO uint16_t ChannelPulse = 0.5/20.0*PWM_PERIOD_COUNT;
