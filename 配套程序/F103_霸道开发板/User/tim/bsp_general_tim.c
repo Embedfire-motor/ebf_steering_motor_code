@@ -8,7 +8,7 @@
   ******************************************************************************
   * @attention
   *
-  * 实验平台:野火  STM32 F407 开发板  
+  * 实验平台:野火  STM32 F103 开发板  
   * 论坛    :http://www.firebbs.cn
   * 淘宝    :http://firestm32.taobao.com
   *
@@ -175,9 +175,9 @@ void set_steering_gear_angle(uint16_t angle_temp)
 void show_help(void)
 {
     printf("——————————————野火舵机驱动演示程序——————————————\n\r");
-    printf("输入命令(以回车结束)：\n\r");
-    printf("< ? >     -帮助菜单\n\r");
-    printf("a[data]   -设置舵机的角度（范围：%d—%d）\n\r", 0, 180);
+    printf("输入命令(<>内的内容，以回车结束)：\n\r");
+    printf("<?>       -帮助菜单\n\r");
+    printf("<a+角度>  -设置舵机的角度（范围：%d—%d），使用空格代替+号\n\r", 0, 180);
 }
 
 extern uint16_t ChannelPulse;

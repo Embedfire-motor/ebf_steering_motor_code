@@ -168,9 +168,9 @@ void set_steering_gear_angle(uint16_t angle_temp)
 void show_help(void)
 {
     printf("——————————————野火舵机驱动演示程序——————————————\n\r");
-    printf("输入命令(以回车结束)：\n\r");
-    printf("< ? >     -帮助菜单\n\r");
-    printf("a[data]   -设置舵机的角度（范围：%d—%d）\n\r", 0, 180);
+    printf("输入命令(<>内的内容，以回车结束)：\n\r");
+    printf("<?>       -帮助菜单\n\r");
+    printf("<a+角度>  -设置舵机的角度（范围：%d—%d），使用空格代替+号\n\r", 0, 180);
 }
 
 extern uint16_t ChannelPulse;
